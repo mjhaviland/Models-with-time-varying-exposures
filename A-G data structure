@@ -1,0 +1,21 @@
+A-G data structure
+
+data name1;
+      set name;
+
+      ga_start=21;
+
+      delivery_d=0; lb_d=0; loss_d=0;
+      if ga ne . ;
+      do _i_=ga_start to ga;
+
+            if _i_  eq ga then delivery_d=1; else delivery_d=0; /*all deliveries after 20 weeks*/
+            if _i_  eq ga and pregloss_d=0 then lb_d=1; else lb_d=0; /*live births*/
+            if _i_  eq ga and pregloss_d=1 then loss_d=1; else loss_d=0; /*losses*/
+
+      ga_week=_i_;
+      drop _i_;
+      output; end;
+
+run;
+
