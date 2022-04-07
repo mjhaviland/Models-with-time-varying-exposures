@@ -19,3 +19,16 @@ data name1;
 
 run;
 
+A fixed covariate has uniquely defined risk
+sets at the start of the study, which do not overlap. In
+contrast, a time-dependent covariate has changing risk
+sets that are redefined, based on the current value of
+the covariate, at each unique event time. Hence, the
+risk set ni consists of all individuals who are at risk just
+prior to time ti and whose covariate value indicates
+membership in the group being considered at time ti.
+This number can increase or decrease over the time
+course covered in the study
+
+
+Schultz LR, Peterson EL, Breslau N. Graphing survival curve estimates for time-dependent covariates. Int J Methods Psychiatr Res. 2002;11(2):68-74. doi: 10.1002/mpr.124. PMID: 12459796; PMCID: PMC6878542.
